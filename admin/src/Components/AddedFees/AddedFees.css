@@ -1,0 +1,106 @@
+.added-fees-search{
+    display: flex;
+    width: 70em;
+    margin: 2em;
+    justify-content: space-around;
+    align-items:center;
+}
+
+.added-fees-section p,
+.added-fees-session p,
+.added-fees-department p{
+    font-size: 1.2em;
+    color: rgb(8, 8, 8);
+    font-weight: bold;
+}
+
+.added-fees-session input,
+.added-fees-department input{
+    padding: 0.5em;
+    border-radius: 5px;
+    width: 15em;
+    border: 1px solid rgb(122, 121, 121);
+    
+}
+.added-fees-section select{
+    padding: 0.5em;
+    border-radius: 5px;
+    width: 15em;
+    border: 1px solid rgb(122, 121, 121);
+    
+}
+.added-fees-button{
+    width: 70em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.added-fees-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2em;
+    margin-left: 4.2em;
+    background-color: white;
+    margin-top: 2em;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 5px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.added-fees-container{
+    padding: 1em;
+    display: grid;
+    gap:1em;
+    grid-template-columns: repeat(4,1fr);
+}
+.added-fee-container{
+    
+    width: 15em;
+    height: 7em;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(88, 88, 88);
+    border-radius: 5px;
+    background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+}
+
+
+.added-fees-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.added-fees-container .forWhich{
+    cursor: pointer;
+    color: white;
+    font-weight: 600;
+    font-size: 1.2em;
+}
+
+.added-fees-container .fee{
+    cursor: pointer;
+    color: white;
+    font-weight: 600;
+    font-size: 1.2em;
+}
+
+.added-fees-delete-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 30px;
+    position:absolute;
+    top: 0em;
+    right: 0em;
+    background-color: rgb(250, 248, 248);
+    border-radius: 25px;
+    font-size: 20px;
+    rotate: 45deg;
+    cursor: pointer;
+
+}

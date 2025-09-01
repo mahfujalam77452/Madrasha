@@ -1,0 +1,97 @@
+/* LogIn.css */
+
+/* General container styling */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25%;
+    position:absolute;
+    top:40%;
+    left: 40%;
+    width: 25%;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Form container */
+  .login-form {
+    background-color: white;
+    padding: 2em;
+    border-radius: 1em;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+  }
+  
+  .login-form h2 {
+    margin-bottom: 1.5em;
+    color: #6a11cb;
+  }
+  
+  /* Input fields */
+  .login-form input {
+    width: 100%;
+    padding: 0.8em;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+    border-radius: 0.5em;
+    font-size: 1em;
+    box-sizing: border-box;
+  }
+  
+  /* Error message */
+  .error {
+    color: red;
+    font-size: 0.9em;
+    margin-top: -0.5em;
+    margin-bottom: 1em;
+  }
+  
+  /* Submit button */
+  .login-form button {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
+    border: none;
+    padding: 0.8em 1.5em;
+    border-radius: 0.5em;
+    font-size: 1.1em;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+  }
+  
+  .login-form button:hover {
+    background: linear-gradient(135deg, #2575fc, #6a11cb);
+  }
+  
+  /* Change password link */
+  .change-password-link {
+    margin-top: 1em;
+    color: #2575fc;
+    cursor: pointer;
+    text-decoration: underline;
+    font-size: 0.9em;
+  }
+  
+  .change-password-link:hover {
+    color: #6a11cb;
+  }
+  
+
+  /* Add this to your LogIn.css */
+.success-message {
+    background-color: #4CAF50; /* Green background */
+    color: white;
+    padding: 10px;
+    text-align: center;
+    position: absolute;
+    top: -120%;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  

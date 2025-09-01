@@ -1,0 +1,114 @@
+.certificate-student-search{
+    display: flex;
+    width: 70em;
+    margin: 2em;
+    justify-content: space-around;
+    align-items:center;
+}
+
+.certificate-section p,
+.certificate-session p,
+.certificate-department p{
+    font-size: 1.2em;
+    color: rgb(8, 8, 8);
+    font-weight: bold;
+}
+
+.certificate-session input
+{
+    padding: 0.5em;
+    border-radius: 5px;
+    width: 15em;
+    border: 1px solid rgb(122, 121, 121);
+    
+}
+.certificate-section select,
+.certificate-department select{
+    padding: 0.5em;
+    border-radius: 5px;
+    width: 15em;
+    border: 1px solid rgb(122, 121, 121);
+    
+}
+.certificate-button{
+    width: 70em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.add-certificate-info{
+    padding: 1em;
+    display: flex;
+    width: 60em;
+    justify-content: space-between;
+}
+
+.add-certificate-info img{
+    width: 6em;
+    height: 7em;
+    border-radius: 3px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.add-certificate-file{
+    width: 60em;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.add-certificate-box{
+    border: 1px solid black;
+    margin:1em;
+    margin-left: 6em;
+    border-radius: 5px;
+    width: 62em;
+    
+   
+}
+
+.certificate-input-file{
+    display: none;
+}
+
+.certificate-lebel{
+    width: 8em;
+    height: 2em;
+    color: rgb(253, 226, 226);
+    display: flex;
+    border: 1px solid black;
+    padding: 2px;
+    border-radius: 5px;
+    background-color: rgb(6, 167, 167);
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.certificate-lebel:hover{
+    background-color: rgb(4, 126, 126);
+}
+
+.add-certificate-button button{
+    width: 4em;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.certificate-examName select{
+    width: 12em;
+    padding: 8px;
+    height: 3em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}

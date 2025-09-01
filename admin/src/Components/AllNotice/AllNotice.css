@@ -1,0 +1,38 @@
+.all-notice{
+    margin: 2em;
+    background-color: white;
+    margin-top: 0;
+    width: 72em;
+    height: fit-content;
+    border-radius: 5px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.notice-container{
+    height: 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid rgb(195, 191, 191);
+    margin: 1em;
+    padding: 1em;
+    border-radius: 5px;
+    background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+}
+
+.notice-title{
+    color:rgb(3, 187, 67);
+    font-weight: 600;
+    font-size: 1.2em;
+}
+
+.notice-date{
+    color:rgb(66, 3, 253)
+}
+
+.notice-delete-icon{
+    color:rgb(253, 0, 0);
+    rotate: 45deg;
+    font-size: 2em;
+    cursor:pointer;
+}

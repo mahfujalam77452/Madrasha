@@ -1,0 +1,130 @@
+.see-fee{
+    padding: 2em;
+}
+
+.see-fee-search-date{
+    display: flex;
+    gap:1em;
+}
+
+.see-fee-search-startingDate,
+.see-fee-search-endingDate{
+    display: flex;
+    align-items: center;
+    gap:1em;
+    color: rgb(105, 104, 104);
+}
+
+.see-fee-search-startingDate input,
+.see-fee-search-endingDate input{
+   height: 1.5em;
+   padding: 2px;
+   border-radius: 5px;
+   width: 10em;
+}
+
+.see-fee-search-option{
+    display: flex;
+    gap:2em;
+}
+.see-fee-search-section,
+.see-fee-search-session,
+.see-fee-search-department,
+.see-fee-search-forWhich{
+    display: flex;
+    gap:1em;
+    height:3em;
+    align-items: center;
+    color: rgb(105, 104, 104);;
+}
+.see-fee-search-option select{
+    width: 12em;
+    padding: 2px;
+    border-radius: 5px;
+}
+
+.see-fee-search-option input{
+    width: 10em;
+    padding: 3px;
+    border-radius: 5px;
+    border: 1px solid rgb(75, 75, 75);
+}
+.see-fee-search-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3em;
+}
+.see-fee-search-button button{
+    width: 6em;
+    padding: 8px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.see-fee-result-aditional-info{
+    display: flex;
+    justify-content: space-between;
+}
+
+.see-fee-result-main-info{
+    display: flex;
+    justify-content: space-between;
+}
+
+.see-fee-result-card{
+    background-color: white;
+    padding: 5px;
+    margin-top: 2em;
+    margin-left: 2em;
+    border:1px solid rgb(189, 188, 188);
+    border-radius: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.see-fee-result-aditional-info .section{
+    color: fuchsia;
+}
+
+.see-fee-result-aditional-info .session{
+    color: fuchsia;
+}
+
+.see-fee-result-aditional-info .department{
+    color: fuchsia;
+}
+
+
+.see-fee-result-aditional-info .forWhich{
+    color: fuchsia;
+}
+
+.see-fee-result-main-info .date{
+    color: red;
+}
+
+.see-fee-result-main-info .rol-number{
+    color:blue;
+}
+
+.see-fee-result-main-info .name{
+    color:blue;
+}
+
+.see-fee-result-main-info .payment-status .paid{
+    color:rgb(50, 197, 0);
+}
+
+
+.see-fee-result-main-info .payment-status .unpaid{
+    color:rgb(245, 43, 43);
+}

@@ -1,0 +1,70 @@
+.search-donation-section{
+    display: flex;
+    width: 70em;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1em;
+}
+
+.search-donation-day input{
+    padding: 0.5em;
+    border-radius: 5px;
+    width: 15em;
+    border: 1px solid rgb(122, 121, 121);
+    
+}
+
+.search-donation-sector select{
+    padding: 0.5em;
+    border-radius: 5px;
+    width: 15em;
+    border: 1px solid rgb(122, 121, 121);
+    
+}
+
+
+
+.search-donation-button button{
+    width: 6em;
+    padding: 8px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.donation-info{
+    display: flex;
+    padding: 0.5em;
+    justify-content: space-around;
+    border: 1px solid rgb(114, 114, 114);
+    margin-bottom: 1em;
+    margin-left:4em;
+    border-radius: 5px;
+}
+
+.donation-info p{
+    width: 15em;
+}
+
+.donation-info .donation-info-date{
+
+    color: red;
+}
+
+.donation-info .donation-info-name{
+    color: rgb(3, 147, 147);
+}
+
+.donation-info .donation-info-mail{
+    color: rgb(3, 147, 147);
+}
+
+.donation-info .donation-info-amount{
+    color: rgb(3, 147, 147);
+}

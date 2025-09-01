@@ -1,0 +1,58 @@
+.add-picture {
+    width: 100%;
+    padding: 20px;
+    border-radius: 8px;
+    background: white;
+   
+  }
+  
+  .add-picture-category,
+  .add-picture-title,
+  .add-picture-file {
+    margin-bottom: 15px;
+  }
+  
+  .add-picture-category p,
+  .add-picture-title p,
+  .add-picture-file p {
+    margin: 0 0 5px;
+    font-weight: bold;
+  }
+  
+  .add-picture-category select,
+  .add-picture-title input {
+    width: 50%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  .add-picture-file input {
+    width: 100%;
+    padding: 6px;
+  }
+  .add-picture-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10em;
+  }
+  button[type="submit"] {
+    width: 10%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
