@@ -1,0 +1,162 @@
+.gallery-container {
+  margin: 2em 3.5em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sidebar {
+  width: 200px;
+  background-color: #f4f4f4;
+  height: auto;
+  padding-top: 20px;
+  border-right: 1px solid #e0e0e0;
+  overflow-y: auto; /* Add vertical scroll for overflow content */
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar ul li {
+  padding: 10px 20px;
+  font-size: 18px;
+  color: #000;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.sidebar ul li:hover {
+  color: #16c60c;
+}
+
+.sidebar ul li.active {
+  color: #16c60c;
+}
+
+.sidebar ul li.active::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 3px;
+  background-color: #16c60c;
+}
+
+.images-container {
+  width: 80%;
+  height: 80%;
+  overflow-y: scroll;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  padding: 0px;
+}
+
+.gallery-image {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.gallery-image:hover {
+  transform: scale(1.04);
+}
+
+/* Responsive Design */
+
+/* Medium Devices */
+@media (max-width: 1250px) {
+  .gallery-container {
+    margin-left: 3em;
+    margin-right: 3em;
+  }
+  .sidebar {
+    width: 170px;
+  }
+  
+  .images-container {
+    width: 75%;
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+
+
+
+
+@media (max-width: 950px) {
+  .gallery-container {
+    margin-left: 2em;
+    margin-right: 2em;
+  }
+}
+
+
+/* Before 800px: Sidebar and Image container in a row */
+
+
+/* After 800px: Sidebar on top and elements in row direction */
+@media (max-width: 800px) {
+  .gallery-container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap; /* Allow sidebar items to wrap if overflow occurs */
+    overflow-x: auto; /* Horizontal scroll for sidebar if content overflows */
+    padding: 10px 0;
+    border-bottom: 1px solid #e0e0e0;
+  }
+
+  .sidebar ul {
+    display: flex;
+    flex-direction: row; /* Sidebar items in a row */
+    overflow-x: auto;
+    width: 100%;
+  }
+
+  .sidebar ul li {
+    padding: 10px;
+    flex: 1; /* Ensure items take equal width */
+    white-space: nowrap; /* Prevent text wrap */
+  }
+
+  .images-container {
+    margin-top: 2em;
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for images */
+  }
+}
+
+/* Small Devices: Single column layout for images */
+@media (max-width: 500px) {
+  .gallery-container {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+  }
+
+  .images-container {
+    grid-template-columns: repeat(1, 1fr); /* 1 column */
+  }
+
+  .sidebar ul li {
+    font-size: 16px;
+  }
+}
+
+/* Small Smartphones: Reduce font size */
+@media (max-width: 400px) {
+  .sidebar ul li {
+    font-size: 14px;
+  }
+
+  .images-container {
+    grid-template-columns: 1fr; /* Single column for small screens */
+  }
+}

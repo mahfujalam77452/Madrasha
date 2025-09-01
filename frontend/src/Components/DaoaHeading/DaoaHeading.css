@@ -1,0 +1,246 @@
+.daoa-heading {
+    margin-left: 3.5em;
+    margin-right: 3.5em;
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Russo One', sans-serif;
+    height: 110vh;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+
+.daoa-heading img {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.85;
+    background: rgba(255, 0, 0, 0.5);
+    border-radius: 5px;
+    z-index: -1;
+}
+
+.daoa-heading h1 {
+    font-size: 60px;
+    color: rgb(25, 1, 243);
+    overflow: hidden;
+    white-space: nowrap;
+    padding-right: 20px;
+    animation: animate 3s 1 steps(21) alternate;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+}
+
+@keyframes animate {
+    from {
+        width: 0;
+    }
+    to {
+        width: 700px;
+    }
+}
+
+.banner-text h2 {
+    position: relative;
+    font-size: 10px;
+    width: 100px;
+    margin-left: -150px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+    color: rgb(39, 246, 3);
+}
+
+.banner-text h2::before,
+.banner-text h2::after {
+    position: absolute;
+    transition: opacity 0.5s, font-size 0.5s;
+}
+
+.banner-text h2::before {
+    content: 'OFFLINE';
+    font-size: 600%;
+    opacity: 1;
+}
+
+.banner-text h2::after {
+    content: 'ONLINE';
+    font-size: 600%;
+    opacity: 0;
+}
+
+.banner-text h2.active::before {
+    opacity: 0;
+    font-size: 570%;
+}
+
+.banner-text h2.active::after {
+    opacity: 1;
+    font-size: 600%;
+}
+
+/* Responsive Styles */
+@media (max-width: 1250px) {
+    .daoa-heading {
+        margin-left: 3.0em;
+        margin-right: 3.0em;
+    }
+}
+
+@media (max-width: 950px) {
+    .daoa-heading {
+        margin-left: 2.0em;
+        margin-right: 2.0em;
+    }
+}
+
+@media (max-width: 800px) {
+    .daoa-heading {
+        margin-left: 1.0em;
+        margin-right: 1.0em;
+    }
+
+    .daoa-heading h1 {
+        font-size: 50px; /* Adjust font size */
+        animation: animate 2.5s 1 steps(21) alternate; /* Adjust animation duration */
+    }
+
+    @keyframes animate {
+        from {
+            width: 0;
+        }
+        to {
+            width: 500px; /* Adjust width for smaller screens */
+        }
+    }
+
+    .banner-text h2 {
+        font-size: 8px; /* Adjust font size for h2 */
+        margin-left: -100px; /* Adjust position */
+    }
+}
+
+@media (max-width: 750px) {
+    .daoa-heading {
+        margin-left: 0.5em;
+        margin-right: 0.5em;
+    }
+
+    .daoa-heading h1 {
+        font-size: 45px; /* Adjust font size */
+        animation: animate 2s 1 steps(21) alternate; /* Adjust animation duration */
+    }
+
+    @keyframes animate {
+        from {
+            width: 0;
+        }
+        to {
+            width: 400px; /* Adjust width for smaller screens */
+        }
+    }
+}
+
+@media (max-width: 590px) {
+    .daoa-heading {
+        margin-left: 0.2em;
+        margin-right: 0.2em;
+    }
+
+    .daoa-heading h1 {
+        font-size: 40px; /* Adjust font size */
+        animation: animate 1.5s 1 steps(21) alternate; /* Adjust animation duration */
+    }
+
+    @keyframes animate {
+        from {
+            width: 0;
+        }
+        to {
+            width: 480px; /* Adjust width for smaller screens */
+        }
+    }
+
+    .banner-text h2 {
+        font-size: 6px; /* Adjust font size for h2 */
+        margin-left: -50px; /* Adjust position */
+    }
+}
+
+@media (max-width: 500px) {
+    .daoa-heading {
+        margin-left: 0.2em;
+        margin-right: 0.2em;
+    }
+
+    .daoa-heading h1 {
+        font-size: 36px; /* Adjust font size */
+        animation: animate 1.5s 1 steps(21) alternate; /* Adjust animation duration */
+    }
+
+    @keyframes animate {
+        from {
+            width: 0;
+        }
+        to {
+            width: 400px; /* Adjust width for smaller screens */
+        }
+    }
+
+    .banner-text h2 {
+        font-size: 6px; /* Adjust font size for h2 */
+        margin-left: -50px; /* Adjust position */
+    }
+}
+
+@media (max-width: 450px) {
+   
+    
+    .daoa-heading {
+        margin-left: 0em;
+        margin-right: 0em;
+    }
+
+    .daoa-heading h1 {
+        font-size: 31px; /* Further adjust font size */
+        animation: animate 1.5s 1 steps(21) alternate; /* Keep the animation duration */
+    }
+     
+    @keyframes animate {
+        from {
+            width: 0;
+        }
+        to {
+            width: 350px; /* Adjust width for smaller screens */
+        }
+    }
+    .banner-text h2 {
+        font-size: 5px; /* Further adjust font size for h2 */
+        margin-left: -30px; /* Adjust position */
+    }
+}
+
+@media (max-width: 400px) {
+    .daoa-heading h1 {
+        font-size: 25px; /* Smaller font size for very small screens */
+        animation: animate 1.5s 1 steps(21) alternate; /* Keep the animation duration */
+    }
+
+    .banner-text h2 {
+        font-size: 4px; /* Smaller font size for very small screens */
+    }
+}
+
+@media (max-width: 350px) {
+    .daoa-heading h1 {
+        font-size: 24px; /* Further adjust font size */
+        animation: animate 1.5s 1 steps(21) alternate; /* Keep the animation duration */
+    }
+
+    .banner-text h2 {
+        font-size: 3px; /* Further adjust font size */
+    }
+}

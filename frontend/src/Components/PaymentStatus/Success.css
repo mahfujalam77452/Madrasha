@@ -1,0 +1,134 @@
+/* Success.css */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+  }
+  
+  .success-container {
+    margin:3.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #6dd5ed, #2193b0);
+  }
+  
+  .success-box {
+    text-align: center;
+    background: white;
+    padding: 40px 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+  }
+  
+  .checkmark-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 20px;
+    background-color: #4caf50;
+    border-radius: 50%;
+    position: relative;
+  }
+  
+  .checkmark {
+    position: relative;
+    width: 40px;
+    height: 20px;
+    border-left: 5px solid white;
+    border-bottom: 5px solid white;
+    transform: rotate(-45deg);
+    animation: draw-checkmark 0.5s ease-in-out;
+  }
+  
+  @keyframes draw-checkmark {
+    0% {
+      width: 0;
+      height: 0;
+    }
+    50% {
+      width: 20px;
+      height: 0;
+    }
+    100% {
+      width: 40px;
+      height: 20px;
+    }
+  }
+  
+  .success-box h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .success-box p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  .success-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #4caf50;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .success-button:hover {
+    background-color: #45a049;
+  }
+  
+
+  @media (max-width: 550px){
+    .success-box{
+      border-radius: 2px;
+    }
+  }
+
+  @media (max-width: 1300px) {
+    .success-container{
+        margin: 3.0em;
+        
+    }
+}
+
+@media (max-width: 1000px) {
+    .success-container {
+        margin: 2.0em
+    }
+
+    
+}
+
+@media (max-width: 800px) {
+    .success-container {
+        margin: 1.0em;
+        
+    }
+}
+
+@media (max-width: 750px) {
+    .success-container{
+        margin: 2em;
+        
+    }
+}
+
+@media (max-width: 500px) {
+    .success-container {
+        margin : 1em;
+       
+    }
+
+    
+}

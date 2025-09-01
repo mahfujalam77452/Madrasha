@@ -1,0 +1,331 @@
+.navbar {
+    margin-left: 3.5em;
+    margin-right: 3.5em;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    background-color: #f8f9fa;
+    padding: 10px auto;
+    box-shadow: 0px 1px 3px -2px black;
+  }
+  
+  .navbar-up {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+  }
+  
+  .nav-logo {
+    display: flex;
+    align-items: center;
+  }
+  .nav-bar-icon{
+    opacity: 0;
+    position:absolute;
+  }
+  .nav-logo img {
+    height: 120px;
+    width: 120px;
+  }
+  
+  .nav-name {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .name {
+    font-size: 1.9em;
+    font-weight: bold;
+    color: #13467c;
+    margin-bottom: 0px;
+    font-family: 'SolaimanLipi', sans-serif;
+  }
+  
+  .mini-description {
+    margin-top: 0px;
+    font-size: 0.9em;
+    color: #56e356;
+  }
+  
+  .nav-pay button {
+    font-family: 'YourBanglaFont', Arial, sans-serif;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 1em;
+    border-radius: 5px;
+  }
+  
+  .nav-pay button:hover {
+    background-color: #be5a1c;
+  }
+  
+  .navbar-down {
+    margin-top: 0px;
+  }
+  
+  .nav-menu {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+  }
+  
+  .nav-menu li {
+    font-family: 'YourBanglaFont', Arial, sans-serif;
+    color: rgb(107, 106, 106);
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1.1em;
+    border-radius: 0.8em;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Hover state for menu items */
+  .nav-menu li:hover {
+    background-color: #e3e7e8;
+  }
+  
+  /* Active menu item styling */
+  .nav-menu li.active {
+    background-color: #e3e7e8;  /* The hover color */
+    color: #13467c;             /* Add custom styling if needed */
+  }
+  
+  a {
+    all: unset; /* Unset all default properties */
+    display: inline; /* Set display back to inline (if needed) */
+    text-decoration: none; /* Ensure there's no underline */
+    cursor: pointer; /* Make sure it still behaves like a link */
+}
+
+@media (max-width: 1250px){
+ 
+  .navbar {
+    margin-left: 3.0em;
+    margin-right: 3.0em;
+    
+  }
+
+}
+
+
+@media (max-width: 950px){
+ 
+  .navbar {
+    margin-left: 2.0em;
+    margin-right: 2.0em;
+    
+  }
+  
+  .nav-logo img {
+    height: 110px;
+    width: 110px;
+  }
+  
+  .nav-name {
+    gap: 9px;
+  }
+  
+  .name {
+    font-size: 1.7em;
+  }
+  
+  .mini-description {
+    
+    font-size: 1.0em;
+   
+  }
+
+}
+
+
+@media (max-width: 800px) {
+  .logo {
+    opacity: 0;
+    position: absolute;
+  }
+  .nav-bar-icon {
+    opacity: 1;
+    position: relative;
+    cursor: pointer;
+  }
+  .navbar {
+    margin-left: 1.0em;
+    margin-right: 1.0em;
+    min-height: 7em;
+  }
+  .nav-pay {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+  }
+  .nav-pay button {
+    width: 8em;
+  }
+  .nav-logo img {
+    height: 50px;
+    width: 50px;
+  }
+  .navbar-up {
+    margin-top: 5px;
+  }
+  .nav-logo {
+    gap: 12em;
+  }
+
+  /* Slide-in navbar-down */
+  .navbar-down {
+    position: fixed;
+    top: 0;
+    left: -50%;
+    height: 100%;
+    width: 30%;
+    background-color: #fff;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    transition: left 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 100;
+  }
+
+  /* Show the navbar when the class 'show' is applied */
+  .navbar-down.show {
+    left: 0;
+    opacity: 1;
+  }
+
+  .nav-menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .nav-menu li {
+    font-size: 1.3em;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+  }
+}
+@media (max-width: 750px){
+
+  .nav-logo {
+    gap: 10em;
+  }
+  .nav-pay{
+       gap:0.5em;
+  }
+  .nav-pay button {
+    width: 7em;
+  }
+  .navbar{
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+  }
+
+}
+
+@media (max-width: 700px){
+
+  .nav-logo {
+    gap: 8em;
+  }
+  .nav-name {
+    gap: 7px;
+  }
+  .navbar-down{
+    width: 50%;
+  }
+  .name {
+    font-size: 1.5em;
+  }
+  
+  .mini-description {
+    margin-top: 0px;
+    font-size: 0.8em;
+    color: #56e356;
+  }
+  .nav-pay button {
+    width: 7em;
+    font-size: 0.9em;
+    height: 2.5em;
+  }
+  .navbar{
+    min-height: 6em;
+  }
+
+}
+
+@media (max-width: 600px){
+  
+  .nav-logo {
+   
+    gap: 7em;
+  }
+  .nav-logo img {
+    height: 40px;
+    width: 40px;
+  }
+}
+
+@media (max-width: 500px){
+  .nav-logo {
+    gap: 5em;
+  }
+}
+@media (max-width: 480px){
+  .nav-logo {
+    gap: 4em;
+  }
+}
+
+@media (max-width: 450px){
+  .nav-logo {
+    gap: 5em;
+  }
+  .nav-logo img {
+    height: 30px;
+    width: 30px;
+  }
+
+  .nav-name {
+    gap: 6px;
+  }
+  .nav-pay button{
+    font-size: 10px;
+    padding: 3px;
+  }
+  .navbar{
+    min-height: 4em;
+  }
+  .navbar{
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 420px){
+  .nav-logo {
+    gap: 3em;
+  }
+  
+}
+
+@media (max-width: 355px){
+  .nav-logo {
+    gap: 2em;
+  }
+}

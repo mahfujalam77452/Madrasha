@@ -1,0 +1,232 @@
+.ImageSlider {
+  display: flex;
+  justify-content: center;
+  margin-left: 3.5em;
+  margin-right: 3.5em;
+}
+
+.carousel-container {
+  margin-top: 30px;
+  border-radius: 30px;
+  width: 100vw;
+  height: 70vh;
+  overflow: hidden;
+}
+
+.image-container {
+  border-radius: 30px;
+  width: 1000%; /* Adjust this for responsiveness if needed */
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  transition: margin-left 1.5s ease-in-out;
+  overflow: hidden;
+}
+
+.image-container .image {
+  border-radius: 30px;
+  width: 10%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.image-container .image img {
+  border-radius: 30px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+/* Media Queries */
+@media (max-width: 1250px) {
+  .image-container .image {
+    width: 12.5%; /* Adjust percentage for smaller screens */
+  }
+  .ImageSlider {
+     margin-left: 3.0em;
+     margin-right: 3.0em;
+  }
+}
+
+@media (max-width: 950px) {
+  .image-container .image {
+    border-radius: 20px;
+    
+  }
+  .carousel-container{
+    border-radius: 20px;
+  }
+  .image-container .image img {
+    border-radius: 20px;
+    
+   
+  }
+  
+  .image-container .image {
+    width: 15%; /* Further adjust for smaller screens */
+  }
+  .ImageSlider {
+    margin-left: 2.0em;
+    margin-right: 2.0em;
+ }
+}
+@media(max-width:800){
+  .image-container .image {
+    border-radius: 15px;
+    
+  }
+  .carousel-container{
+    border-radius: 15px;
+  }
+  .image-container .image img {
+    border-radius: 15px;
+    
+   
+  }
+  .ImageSlider {
+    margin-left: 1.0em;
+    margin-right: 1.0em;
+ }
+}
+@media (max-width: 750px) {
+  .image-container .image {
+    width: 20%; /* Make images wider for smaller screens */
+  }
+  .ImageSlider {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+ }
+ .image-container .image {
+  border-radius: 10px;
+  
+}
+.carousel-container{
+  border-radius: 10px;
+}
+.image-container .image img {
+  border-radius: 10px;
+  
+ 
+}
+}
+
+@media (max-width: 500px) {
+  .image-container .image {
+    border-radius: 8px;
+    
+  }
+  .carousel-container{
+    border-radius: 8px;
+  }
+  .image-container .image img {
+    border-radius: 8px;
+    
+   
+  }
+  .carousel-container {
+    height: 60vh; /* Adjust height for smaller devices */
+  }
+  
+  .image-container .image {
+    width: 25%; /* Further adjustment */
+  }
+}
+
+@media (max-width: 450px) {
+  .image-container .image {
+    border-radius: 5px;
+    
+  }
+  .carousel-container{
+    border-radius: 5px;
+  }
+  .image-container .image img {
+    border-radius: 5px;
+    
+   
+  }
+  .carousel-container {
+    height: 45vh; /* Adjust height for better fit */
+  }
+  
+  .image-container .image {
+    width: 33.33%; /* Adjust to fit three images */
+  }
+  .ImageSlider {
+    margin-left: 0em;
+    margin-right: 0em;
+ }
+}
+
+@media (max-width: 400px) {
+  .carousel-container {
+    height: 38vh; /* Further reduce height */
+  }
+  
+  .image-container .image {
+    width: 50%; /* Adjust to fit two images */
+  }
+}
+
+@media (max-width: 350px) {
+  .carousel-container {
+    height: 30vh; /* Smallest height adjustment */
+  }
+  
+  .image-container .image {
+    width: 100%; /* Single image view */
+  }
+}
+/* for all page */
+
+ /* @media (max-width: 1250px) {
+  
+  .video-page {
+     margin-left: 3.0em;
+     margin-right: 3.0em;
+  }
+}
+
+@media (max-width: 950px) {
+  
+  .video-page {
+    margin-left: 2.0em;
+    margin-right: 2.0em;
+ }
+}
+@media(max-width:800){
+
+  .video-page {
+    margin-left: 1.0em;
+    margin-right: 1.0em;
+ }
+}
+@media (max-width: 750px) {
+ 
+  .video-page {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+ }
+ 
+}
+
+@media (max-width: 500px) {
+  
+}
+
+@media (max-width: 450px) {
+  
+  .video-page {
+    margin-left: 0em;
+    margin-right: 0em;
+ }
+}
+
+@media (max-width: 400px) {
+  
+}
+
+@media (max-width: 350px) {
+ 
+} */

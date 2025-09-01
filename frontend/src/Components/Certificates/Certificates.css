@@ -1,0 +1,144 @@
+.certificates {
+    
+  padding: 1em;
+  border-radius: 1em;
+  background:white;
+   
+  }
+  .certificates-name,
+  .certificates-roll,
+  .certificates-section,
+  .certificates-name,
+  .certificates-department,
+  .certificates-session {
+    margin-bottom: 15px;
+  }
+  .certificates-name p,
+  .certificates-roll p,
+  .certificates-section p,
+  .certificates-name p,
+  .certificates-department p,
+  .certificates-session p {
+    margin: 0 0 5px;
+    font-weight: bold;
+  }
+  .certificates-name input,
+  .certificates-roll input,
+  .certificates-section select,
+  .certificates-name select,
+  .certificates-department input,
+  .certificates-session input {
+    width: 50%;
+    padding: 8px;
+    height: 3em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  
+  
+  .certificates-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10em;
+  }
+  
+ .certificates-button button[type="submit"] {
+    width: 10%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+ .certificates-button button[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+
+  @media(max-width:800px){
+    .certificates-name input,
+    .certificates-roll input,
+    .certificates-section select,
+    .certificates-name select,
+    .certificates-department input,
+    .certificates-session input {
+      width: 60%;
+      padding: 7px;
+      height: 2.5em;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      font-size: 12px;
+    }
+
+    .certificates-name p,
+    .certificates-roll p,
+    .certificates-section p,
+    .certificates-name p,
+    .certificates-department p,
+    .certificates-session p {
+    font-size: 1em;
+  }
+  .certificates-button button[type="submit"]{
+    width: 15%;
+  }
+  }
+
+  @media(max-width:650px){
+    .certificates-name input,
+    .certificates-roll input,
+    .certificates-section select,
+    .certificates-name select,
+    .certificates-department input,
+    .certificates-session input {
+      width: 80%;
+    }
+    .certificates-name p,
+    .certificates-roll p,
+    .certificates-section p,
+    .certificates-name p,
+    .certificates-department p,
+    .certificates-session p {
+    font-size: 0.9em;
+  }
+  .certificates-button button[type="submit"]{
+    width: 20%;
+  }
+
+  
+  }
+
+
+  @media(max-width:500px){
+    .certificates-name input,
+    .certificates-roll input,
+    .certificates-section select,
+    .certificates-name select,
+    .certificates-department input,
+    .certificates-session input {
+      width: 100%;
+    }
+
+    .certificates-name p,
+    .certificates-roll p,
+    .certificates-section p,
+    .certificates-name p,
+    .certificates-department p,
+    .certificates-session p  {
+    font-size: 0.9em;
+  }
+  .certificates-button button[type="submit"]{
+    width: 30%;
+  }
+
+  
+  }
+  

@@ -1,0 +1,135 @@
+.exam-container{
+    margin-top: 2em;
+    margin-bottom: 2em;
+    margin-left: 3.5em;
+    margin-right: 3.5em;
+    display: flex;
+  
+    gap:2em;
+    min-height: 100vh;
+}
+.exam-content{
+  width: 100%;
+  margin-right: 3.5em;
+  border: 1px solid rgb(219, 217, 217);
+  border-radius: 1em;
+  background-color: white;
+
+}
+.exam{
+   
+    
+    max-width: 5em;
+}
+
+.exam-sidebar {
+    
+    width: 200px;
+    height: 18em;
+    background-color: #f4cfcf; /* Light background */
+    
+    border-right: 1px solid #f0eeee; /* Subtle border on the right */
+    border-radius: 1em;
+   
+  }
+  
+  .exam-sidebar ul {
+    height: 18em;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .exam-sidebar ul li {
+    padding: 10px 20px;
+    font-size: 18px;
+    color: #000; /* Text color */
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    background-color: #72e40f;
+    border: 1px solid rgb(178, 178, 178);
+    border-radius: 10px;
+    
+  }
+  
+  .exam-sidebar ul li:hover {
+    color: #c6370c; /* Green text on hover */
+  }
+  
+  .exam-sidebar ul li.active {
+    color: #c6370c; /* Green text for the active item */
+    background-color: aqua;
+  }
+  
+  .exam-sidebar ul li.active::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 3px;
+  }
+
+  @media(max-width:1210px){
+    .exam-container{
+      display: flex;
+      flex-direction: column;
+      gap: 2em;
+    }
+    .exam-sidebar {
+      width: fit-content;;
+      padding: 0.5em;
+      height: fit-content;
+     
+    }
+
+    .exam-sidebar ul{
+      flex-direction: row;
+      gap: 1em;
+      height: 3em;
+    }
+  }
+
+  @media(max-width:930px){
+    .exam-sidebar ul li{
+      padding: 8px 15px;
+      font-size: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  @media(max-width:660px){
+    .exam-sidebar ul li{
+      padding: 6px 12px;
+      width: 10000px;
+    }
+    .exam-sidebar ul{
+      max-width: 20em;
+      overflow-x: scroll;
+    }
+    .exam-container{
+      justify-content: center;
+      align-items: center;
+      margin-left: 1.5em;
+      margin-right: 1.5em;
+      
+    }
+
+    .exam-content{
+      margin-right: 0px;
+    }
+
+    
+  }
+
+  @media(max-width:440px){
+    .exam-sidebar ul{
+      max-width: 15em;
+    }
+  }

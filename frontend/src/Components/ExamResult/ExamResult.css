@@ -1,0 +1,149 @@
+.exam-result {
+    
+  padding: 1em;
+  border-radius: 1em;
+  background:white;
+   
+  }
+
+  .exam-result-section,
+  .exam-result-exam-name,
+  .exam-result-department,
+  .exam-result-year {
+    margin-bottom: 15px;
+  }
+ 
+  .exam-result-section p,
+  .exam-result-exam-name p,
+  .exam-result-department p,
+  .exam-result-year p {
+    margin: 0 0 5px;
+    font-weight: bold;
+  }
+ 
+  .exam-result-section select,
+  .exam-result-exam-name select,
+  .exam-result-department select,
+  .exam-result-year input {
+    width: 50%;
+    padding: 8px;
+    height: 3em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  
+  
+  .exam-result-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10em;
+  }
+  
+ .exam-result-button button[type="submit"] {
+    width: 10%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .exam-result-file{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .exam-result-file a{
+    padding: .5em;
+    background-color: chartreuse;
+    border-radius: 10px;
+    color:red
+  }
+  .error-exam-result{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+ .exam-result-button button[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+
+  @media(max-width:800px){
+  
+    .exam-result-section select,
+    .exam-result-exam-name select,
+    .exam-result-department select,
+    .exam-result-year input{
+      width: 60%;
+      padding: 7px;
+      height: 2.5em;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      font-size: 12px;
+    }
+
+    .exam-result-section p,
+    .exam-result-exam-name p,
+    .exam-result-department p,
+    .exam-result-year p {
+    font-size: 1em;
+  }
+  
+  .exam-result-button button[type="submit"]{
+    width: 15%;
+  }
+  }
+
+  @media(max-width:650px){
+   
+  .exam-result-section select,
+  .exam-result-exam-name select,
+  .exam-result-department select,
+  .exam-result-year input{
+      width: 80%;
+    }
+
+    .exam-result-section p,
+    .exam-result-exam-name p,
+    .exam-result-department p,
+    .exam-result-year p{
+    font-size: 0.9em;
+  }
+  .exam-result-button button[type="submit"]{
+    width: 20%;
+  }
+
+  
+  }
+
+
+  @media(max-width:500px){
+   
+  .exam-result-section select,
+  .exam-result-exam-name select,
+  .exam-result-department select,
+  .exam-result-year input{
+      width: 100%;
+    }
+
+    .exam-result-section p,
+    .exam-result-exam-name p,
+    .exam-result-department p,
+    .exam-result-year p{
+    font-size: 0.9em;
+  }
+  .exam-result-button button[type="submit"]{
+    width: 30%;
+  }
+
+  
+  }

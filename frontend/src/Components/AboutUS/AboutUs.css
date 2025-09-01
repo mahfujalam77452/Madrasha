@@ -1,0 +1,238 @@
+.about-us-container {
+  margin-left: 3.5em;
+  margin-right: 3.5em;
+  display: flex;
+  flex-direction: column;
+  background-color: #f4f4f4;
+  margin-top: 2em;
+  
+}
+.about-us-header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1em;
+}
+.about-us-header h1 {
+  width: 10em;
+  text-align: center;
+  border:1px solid black;
+  border-radius: 1em;
+  text-align: center;
+  background-color: #85FFBD;
+  background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+  font-size: 30px;
+  color: #565454;
+  font-weight: bold;
+  padding: 8px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: 'Arial', sans-serif;
+}
+
+.about-us {
+  display: flex;
+  flex-grow: 1;
+}
+
+.aboutus-left {
+  width: 200px;
+  background-color: #f4f4f4;
+  border-right: 1px solid #e0e0e0;
+}
+
+.aboutus-list ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.aboutus-list ul li {
+  padding: 10px 20px;
+  font-size: 18px;
+  color: #000;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.aboutus-list ul li:hover {
+  color: #16c60c;
+}
+
+.aboutus-list ul li.active {
+  color: #16c60c;
+}
+
+.aboutus-list ul li.active::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 3px;
+  background-color: #16c60c;
+}
+
+.about-us-right {
+  flex: 1;
+  padding-left: 20px;
+  background-color: #fff;
+}
+
+.about-us-content {
+  display: none;
+  padding: 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  background-color: #fafafa;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.about-us-content.active {
+  display: block;
+  background-color: white;
+  min-height: 20.5em;
+}
+
+/* Media Queries */
+@media (max-width: 1250px) {
+  .about-us-container {
+    margin-left: 3.0em;
+    margin-right: 3.0em;
+  }
+}
+
+@media (max-width: 950px) {
+  .about-us-container {
+    margin-left: 2.0em;
+    margin-right: 2.0em;
+  }
+  .aboutus-left {
+    width: 180px;
+  }
+  .aboutus-list ul li {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 800px) {
+  .about-us-container {
+    margin-left: 1.0em;
+    margin-right: 1.0em;
+  }
+  .aboutus-left {
+    width: 160px;
+  }
+  .aboutus-list ul li {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 750px) {
+  .about-us-container {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+  }
+  .aboutus-left {
+    width: 150px;
+  }
+  .aboutus-list ul li {
+    font-size: 13px;
+  }
+}
+
+/* Previous CSS remains the same */
+
+@media (max-width: 500px) {
+  .about-us-header h1{
+    font-size: 18px;
+  }
+  .about-us {
+    flex-direction: column; /* Stack the tabs vertically */
+    
+  }
+
+  .aboutus-left {
+    width: 100%; /* Tabs take full width */
+    border-right: none;
+    border-bottom: 1px solid #e0e0e0; /* Separate tabs from content */
+  }
+
+  .aboutus-list ul li {
+    font-size: 16px; /* Slightly smaller font for tabs */
+    text-align: center; /* Center the tab text */
+  }
+
+  .about-us-right {
+    display: none; /* Hide content initially */
+    position: fixed; /* Use fixed positioning to center */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the content */
+    width: 98%; /* Content takes 65% of the screen width */
+    height: auto; /* Adjust height based on content */
+    max-height: 80%; /* Limit height to avoid overflowing */
+    z-index: 999;
+    overflow-y: auto; /* Enable scrolling for overflow */
+    background-color: #fff;
+    transition: all 0.3s ease; /* Smooth transition */
+    padding: 20px; /* Add some padding inside the content */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for better visibility */
+    border-radius: 8px; /* Rounded corners */
+  }
+
+  .about-us-right.show {
+    display: block; /* Show content when a tab is clicked */
+  }
+
+  .about-us-content {
+    display: none; /* Initially hidden */
+    padding: 18px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    background-color: #fafafa;
+  }
+
+  .about-us-content.active {
+    display: block; /* Show active content */
+  }
+  
+  
+}
+
+
+@media (max-width: 450px) {
+  .about-us-header h1{
+    font-size: 16px;
+  }
+  .about-us-container {
+    margin-left: 0em;
+    margin-right: 0em;
+  }
+  .about-us-right {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media (max-width: 400px) {
+  .aboutus-left {
+    width: 100%;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  .aboutus-list ul li {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 350px) {
+  .aboutus-list ul li {
+    font-size: 12px;
+    padding: 8px 10px;
+  }
+  .about-us-header h1 {
+    font-size: 18px;
+    padding: 6px;
+  }
+}

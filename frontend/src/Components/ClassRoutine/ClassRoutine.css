@@ -1,0 +1,137 @@
+.class-routine {
+    
+    padding: 1em;
+    border-radius: 1em;
+    background:white;
+   
+  }
+
+  .class-routine-section,
+  .class-routine-department,
+  .class-routine-year {
+    margin-bottom: 15px;
+  }
+ 
+  .class-routine-section p,
+  .class-routine-department p,
+  .class-routine-year p {
+    margin: 0 0 5px;
+    font-weight: bold;
+  }
+ 
+  .class-routine-section select,
+  .class-routine-department select,
+  .class-routine-year input {
+    width: 50%;
+    padding: 8px;
+    height: 3em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  
+  
+  .class-routine-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10em;
+  }
+  
+ .class-routine-button button[type="submit"] {
+    width: 10%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .class-routine-file{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .class-routine-file a{
+    padding: .5em;
+    background-color: chartreuse;
+    border-radius: 10px;
+    color:red
+  }
+  .error-class-routine{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+ .class-routine-button button[type="submit"]:hover {
+    background-color: #45a049;
+  }
+
+  @media(max-width:800px){
+    .class-routine-section select,
+    .class-routine-department select,
+    .class-routine-year input{
+      width: 60%;
+      padding: 7px;
+      height: 2.5em;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      font-size: 12px;
+    }
+
+    .class-routine-section p,
+    .class-routine-department p,
+    .class-routine-year p {
+    font-size: 1em;
+  }
+  .class-routine-button button[type="submit"]{
+    width: 15%;
+  }
+  }
+
+  @media(max-width:650px){
+    .class-routine-section select,
+    .class-routine-department select,
+    .class-routine-year input{
+      width: 80%;
+    }
+
+    .class-routine-section p,
+    .class-routine-department p,
+    .class-routine-year p {
+    font-size: 0.9em;
+  }
+  .class-routine-button button[type="submit"]{
+    width: 20%;
+  }
+
+  
+  }
+
+
+  @media(max-width:500px){
+  .class-routine-section select,
+  .class-routine-department select,
+  .class-routine-year input{
+      width: 100%;
+    }
+
+    .class-routine-section p,
+    .class-routine-department p,
+    .class-routine-year p  {
+    font-size: 0.9em;
+  }
+  .class-routine-button button[type="submit"]{
+    width: 30%;
+  }
+
+  
+  }
+  

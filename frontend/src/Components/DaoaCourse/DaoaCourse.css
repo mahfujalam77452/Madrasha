@@ -1,0 +1,358 @@
+/* General Styles */
+.daoa-course {
+    min-height: 100vh;
+    margin: 2em 3.5em;
+    font-family: 'Arial, sans-serif'; /* You can change this to your preferred font */
+}
+
+.daoa-course-description {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+}
+
+.daoa-course-heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2em;
+}
+
+.daoa-course-heading p {
+    padding: 0.5em 1em;
+    font-size: 2.5em;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: rgb(2, 107, 245);
+    color: rgb(246, 243, 243);
+    text-align: center;
+}
+
+/* Subject Container */
+.daoa-course-subject {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap; /* Allow subjects to wrap */
+    padding: 2em;
+    gap: 5em;
+    opacity: 0; /* Hidden initially */
+    transform: translateY(50px); /* Slightly shifted down */
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.daoa-course-subject.animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Subject Boxes */
+.daoa-course-subject1,
+.daoa-course-subject2,
+.daoa-course-subject3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20em;
+    width: 22em;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    opacity: 0; /* Hidden initially */
+    transform: translateX(0) translateY(0); /* Initial position */
+}
+
+/* Specific Background Colors */
+.daoa-course-subject1 {
+   
+    background-color: rgb(255, 136, 0);
+    transform: translateX(-100px); /* Start off to the left */
+}
+
+.daoa-course-subject2 {
+    background-color: rgb(13, 255, 0);
+    transform: translateY(-100px); /* Start off above */
+}
+
+.daoa-course-subject3 {
+    background-color: rgb(0, 247, 255);
+    transform: translateX(100px); /* Start off to the right */
+}
+
+/* Animated Subject Boxes */
+.daoa-course-subject.animate .daoa-course-subject1,
+.daoa-course-subject.animate .daoa-course-subject2,
+.daoa-course-subject.animate .daoa-course-subject3 {
+    opacity: 1;
+    transform: translateX(0) translateY(0);
+    transition: transform 1s ease, opacity 1s ease;
+}
+
+/* Add Delays for Staggered Animations */
+.daoa-course-subject.animate .daoa-course-subject1 {
+    transition-delay: 0.3s;
+}
+
+.daoa-course-subject.animate .daoa-course-subject2 {
+    transition-delay: 0.6s;
+}
+
+.daoa-course-subject.animate .daoa-course-subject3 {
+    transition-delay: 0.9s;
+}
+
+.daoa-course-subject p {
+    font-size: 2.5em;
+    word-wrap: break-word;
+    text-align: center;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+
+/* Details Button */
+.details-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+}
+
+.details-button button {
+    font-size: 2em;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(2, 107, 245);
+    color: #fff;
+    transition: background-color 0.3s;
+}
+
+.details-button button:hover {
+    background-color: rgb(1, 85, 170);
+}
+
+/* Details Section */
+.daoa-course-details {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    margin-bottom: 2em;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease, transform 1s ease;
+    pointer-events: none;
+}
+
+.daoa-course-details.show {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+.daoa-course-details-left,
+.daoa-course-details-right {
+    padding: 2em;
+    font-size: 1.5em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    background-color: #f9f9f9; /* Optional: Add a background color */
+    transform: translateX(0);
+    opacity: 0;
+    transition: transform 1s ease, opacity 1s ease;
+}
+
+/* Initial Positions for Details */
+.daoa-course-details-left {
+    transform: translateX(-100px); /* Start off to the left */
+}
+
+.daoa-course-details-right {
+    transform: translateX(100px); /* Start off to the right */
+}
+
+/* Animated Details */
+.daoa-course-details.show .daoa-course-details-left,
+.daoa-course-details.show .daoa-course-details-right {
+    opacity: 1;
+    transform: translateX(0);
+    transition-delay: 0.3s;
+}
+
+.daoa-course-details.show .daoa-course-details-left {
+    color: rgb(246, 149, 3);
+    transition-delay: 0.3s;
+}
+
+.daoa-course-details.show .daoa-course-details-right {
+    color: rgb(197, 3, 246);
+    transition-delay: 0.6s;
+}
+
+/* Ensure the animation is applied to each element */
+.daoa-course-subject1,
+.daoa-course-subject2,
+.daoa-course-subject3 {
+    transition: transform 1s ease; /* Smooth transition for transform */
+    will-change: transform; /* Optimizes performance for transformation */
+}
+
+/* Hover effect: scale the subject */
+.daoa-course-subject1:hover,
+.daoa-course-subject2:hover,
+.daoa-course-subject3:hover {
+    scale: 1.01; /* Scale the element to 110% */
+}
+
+/* Media Queries */
+@media (max-width: 1250px) {
+    .daoa-course {
+        margin-left: 3.0em;
+        margin-right: 3.0em;
+    }
+  .daoa-course-subject1,
+  .daoa-course-subject2,
+  .daoa-course-subject3 {
+    height: 18em;
+    width: 50em;
+    border-radius: 8px;
+   
+  }
+  .daoa-course-subject p {
+    font-size: 2em;
+  }
+  
+}
+@media (max-width: 1190px){
+    .daoa-course-subject1,
+  .daoa-course-subject2,
+  .daoa-course-subject3 {
+    height: 16em;
+    width: 550px;
+    border-radius: 8px;
+   
+  }
+    .daoa-course-subject p {
+        font-size: 1.5em;
+      }
+
+      .daoa-course-heading p{
+        font-size: 2em;
+      }
+}
+@media (max-width: 1000px){
+    .daoa-course-subject{
+        flex-wrap:wrap;
+    }
+    .daoa-course-subject p{
+        font-size: 2.5em;
+    }
+    .daoa-course-heading p{
+        font-size: 1.8em;
+      }
+      .daoa-course-details{
+        flex-direction: column;
+      }
+}
+@media (max-width: 950px) {
+    .daoa-course-subject{
+        flex-wrap:wrap;
+    }
+    .daoa-course {
+        margin-left: 2.0em;
+        margin-right: 2.0em;
+    }
+}
+
+@media (max-width: 800px) {
+    .daoa-course {
+        margin-left: 1.0em;
+        margin-right: 1.0em;
+    }
+    
+    .daoa-course-heading p {
+        font-size: 2em; /* Smaller font size */
+    }
+    
+    .dao-course-subject p {
+        font-size: 2em; /* Smaller font size for subject text */
+    }
+    
+    .details-button button {
+        font-size: 1.5em; /* Smaller button text */
+    }
+}
+
+@media (max-width: 750px) {
+    .daoa-course {
+        margin-left: 0.5em;
+        margin-right: 0.5em;
+    }
+    
+    .daoa-course-subject {
+        padding: 1.5em; /* Reduce padding */
+    }
+    
+    .daoa-course-heading p{
+        font-size: 1.5em;
+      }
+      .daoa-course-details{
+        font-size: 0.7em;
+      }
+      .daoa-course-description p{
+              font-size: 0.8em;
+      }
+}
+
+@media (max-width: 500px) {
+    .daoa-course {
+        margin-left: 0.2em;
+        margin-right: 0.2em;
+    }
+    
+    .daoa-course-subject p {
+        font-size: 2.2em; /* Smaller font size for subject text */
+    }
+    
+    .details-button button {
+        font-size: 1.2em; /* Smaller button text */
+    }
+
+    .daoa-course-details-left,
+    .daoa-course-details-right {
+        font-size: 1.2em; /* Smaller font size for details */
+    }
+}
+
+@media (max-width: 450px) {
+    
+    .daoa-course {
+        margin-left: 0em;
+        margin-right: 0em;
+    }
+    
+    .daoa-course-heading p {
+        font-size: 1.5em; /* Further reduce font size */
+    }
+
+    .dao-course-subject p {
+        font-size: 1.3em; /* Further reduce font size for subject text */
+    }
+    
+    .details-button button {
+        font-size: 1em; /* Further reduce button text */
+    }
+    .daoa-course-description p{
+        font-size: 0.6em;
+      }
+}
+
+@media (max-width: 400px) {
+    .dao-course-subject p {
+        font-size: 1.2em; /* Adjust font size */
+    }
+    
+    .details-button button {
+        padding: 0.5em; /* Adjust padding for smaller screens */
+    }
+}

@@ -1,0 +1,712 @@
+.daoa-course-tab{
+  margin-left: 3.5em;
+  margin-right: 3.5em;
+  margin-top: 0.5em;
+}
+.daoa-course-tab-heading{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+
+}
+
+.daoa-course-tab-heading h1{
+  font-size: 2.8em;
+  color: blue;
+  
+  
+}
+.first-semister{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+.first-semister-description{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10em;
+}
+
+.first-semister p{
+  font-size: 2.5em;
+  font-weight: bold;
+  height: 2em;
+  width: 10em;
+  background-color: cornflowerblue;
+  text-align: center;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+.first-semister-heading h1,
+.second-semister-heading h1{
+  font-size: 2em;
+  
+ 
+}
+
+.first-semister-heading{
+  display: block;
+  padding: 2px;
+  border-bottom: 3px solid rgb(237, 12, 12);
+  margin-bottom:1em ;
+}
+
+
+.first-semister-description {
+  overflow: hidden; /* Ensure content does not overflow */
+}
+
+.first-semister-left, .first-semister-right {
+  opacity: 0; /* Start with elements hidden */
+  animation-duration: 1s; /* Animation duration */
+  animation-fill-mode: forwards; /* Keeps the final state of the animation */
+}
+
+/* Animation for .first-semister-left */
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Animation for .first-semister-right */
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.first-semister-left {
+  animation-name: slideInLeft;
+}
+
+.first-semister-right {
+  animation-name: slideInRight;
+}
+
+
+.second-semester{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.second-semister-heading{
+  
+  display: block;
+  padding: 2px;
+  border-bottom: 3px solid rgb(237, 12, 12);
+  margin-bottom:1em ;
+}
+
+.second-semester-subject{
+  display: flex;
+  justify-content: center;
+ 
+  gap:2em;
+  padding: 2px;
+}
+
+.second-semister-subject1,
+.second-semister-subject2,
+.second-semister-subject3,
+.second-semister-subject4
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+}
+
+.second-semister-subject1-short,
+.second-semister-subject2-short,
+.second-semister-subject3-short,
+.second-semister-subject4-short {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-wrap: wrap;
+  height: 15em;
+  width: 16em;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  
+   /* Initial position */
+}
+
+.second-semister-subject1-short p,
+.second-semister-subject2-short p,
+.second-semister-subject3-short p,
+.second-semister-subject4-short p{
+  margin-bottom: 3em;
+  margin-top: 3em;
+  font-size: 1.4em;
+  font-weight: bold;
+  color: rgb(0, 187, 255);
+}
+
+.second-semister-subject1-description-first-part,
+.second-semister-subject2-description-first-part,
+.second-semister-subject3-description-first-part,
+.second-semister-subject4-description-first-part{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-wrap: wrap;
+  text-align: center;
+  width: 16em;
+  border-radius: 5px;
+  padding: 1em;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.second-semister-subject1-description-second-part,
+.second-semister-subject2-description-second-part,
+.second-semister-subject3-description-second-part,
+.second-semister-subject4-description-second-part{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-wrap: wrap;
+  text-align: center;
+  width: 16em;
+  border-radius: 5px;
+  padding: 1em;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.second-semister-subject1-description,
+.second-semister-subject2-description,
+.second-semister-subject3-description{
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+
+
+.third-semester{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.third-semister-heading{
+  display: block;
+  padding: 2px;
+  border-bottom: 3px solid rgb(237, 12, 12);
+  margin-bottom:1em ;
+}
+
+.third-semester-subject{
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap:2em;
+  padding: 2px;
+  overflow-x: auto;
+  
+}
+
+.third-semister-subject1,
+.third-semister-subject2,
+.third-semister-subject3,
+.third-semister-subject4,
+.third-semister-subject5
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+}
+
+.third-semister-subject1-short,
+.third-semister-subject2-short,
+.third-semister-subject3-short,
+.third-semister-subject4-short,
+.third-semister-subject5-short {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-wrap: wrap;
+  height: 15em;
+  width: 17em;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  
+   /* Initial position */
+}
+
+.third-semister-subject1-short p,
+.third-semister-subject2-short p,
+.third-semister-subject3-short p,
+.third-semister-subject4-short p,
+.third-semister-subject5-short p{
+  margin-bottom: 3em;
+  margin-top: 3em;
+  font-size: 1.4em;
+  font-weight: bold;
+  color: rgb(0, 187, 255);
+}
+
+.third-semister-subject1-description-first-part,
+.third-semister-subject2-description-first-part,
+.third-semister-subject3-description-first-part,
+.third-semister-subject4-description-first-part,
+.third-semister-subject5-description-first-part{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-wrap: wrap;
+  text-align: center;
+  width: 16em;
+  border-radius: 5px;
+  padding: 1em;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.third-semister-subject1-description,
+.third-semister-subject2-description,
+.third-semister-subject3-description,
+.third-semister-subject4-description,
+.third-semister-subject5-description{
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+/* Default style for .second-semester */
+.second-semester {
+  margin: 20px;
+}
+
+.second-semister-heading h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.second-semester-subject {
+  display: flex;
+  
+  gap: 20px;
+}
+
+/* Animation for .short sections */
+.second-semister-subject1-short,
+.second-semister-subject2-short,
+.second-semister-subject3-short,
+.second-semister-subject4-short {
+  opacity: 0;
+  transform: translateY(-100%);
+  animation: slideDown 1s forwards;
+}
+
+/* Slide down from the top */
+@keyframes slideDown {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Hidden by default */
+.second-semister-subject1-description,
+.second-semister-subject2-description,
+.second-semister-subject3-description,
+.second-semister-subject4-description {
+  opacity: 0;
+  transform: translateY(100%);
+  transition: all 0.5s ease-in-out;
+  max-height: 0;
+  overflow: hidden;
+}
+
+/* Show description when clicked */
+.second-semister-subject1-description.show,
+.second-semister-subject2-description.show,
+.second-semister-subject3-description.show,
+.second-semister-subject4-description.show {
+  opacity: 1;
+  transform: translateY(0);
+  max-height: 500px; /* Adjust based on your content's height */
+}
+
+/* Button styling */
+button {
+  padding: 5px 10px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+/* Hidden by default */
+.second-semister-subject1-description,
+.second-semister-subject2-description,
+.second-semister-subject3-description,
+.second-semister-subject4-description {
+opacity: 0;
+transform: translateY(100%);
+transition: all 0.5s ease-in-out;
+max-height: 0;
+overflow: hidden;
+visibility: hidden; /* Prevent collapsing */
+
+}
+
+/* Show description when clicked */
+.second-semister-subject1-description.show,
+.second-semister-subject2-description.show,
+.second-semister-subject3-description.show,
+.second-semister-subject4-description.show {
+opacity: 1;
+transform: translateY(0);
+max-height: 500px; /* Adjust based on your content's height */
+visibility: visible;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Box-shadow visible when shown */
+}
+
+/* Hidden by default */
+.third-semister-subject1-description,
+.third-semister-subject2-description,
+.third-semister-subject3-description,
+.third-semister-subject4-description,
+.third-semister-subject5-description {
+opacity: 0;
+transform: translateY(100%);
+transition: all 0.5s ease-in-out;
+max-height: 0;
+overflow: hidden;
+visibility: hidden;
+
+}
+
+/* Show description when clicked */
+.third-semister-subject1-description.show,
+.third-semister-subject2-description.show,
+.third-semister-subject3-description.show,
+.third-semister-subject4-description.show,
+.third-semister-subject5-description.show {
+opacity: 1;
+transform: translateY(0);
+max-height: 500px; /* Adjust based on content height */
+visibility: visible;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Box-shadow visible when shown */
+}
+
+/* Add a gap between the first and second parts of the description */
+
+
+/* Animate the .third-semister-subject{n}-short coming from the top */
+.third-semister-subject1-short,
+.third-semister-subject2-short,
+.third-semister-subject3-short,
+.third-semister-subject4-short,
+.third-semister-subject5-short {
+animation: slideInFromTop 0.5s ease-out;
+}
+
+@keyframes slideInFromTop {
+0% {
+  transform: translateY(-100%);
+  opacity: 0;
+}
+100% {
+  transform: translateY(0);
+  opacity: 1;
+}
+}
+
+@media (max-width: 1250px) {
+  .second-semester-subject{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
+    padding: 2px;
+  }
+  
+  
+  
+  
+  
+  .second-semister-subject1-short p,
+  .second-semister-subject2-short p,
+  .second-semister-subject3-short p,
+  .second-semister-subject4-short p{
+    margin-bottom: 3em;
+    margin-top: 3em;
+    font-size: 1.4em;
+  }
+  
+  
+  
+  
+  .daoa-course-tab {
+   margin-left: 3.0em;
+   margin-right: 3.0em;
+  }
+}
+
+@media (max-width: 1060px) {
+  .third-semister-heading{
+    font-size: .9em;
+  }
+
+  .first-semister-description{
+    gap:4.5em
+  }
+}
+@media (max-width: 950px) {
+  .third-semester-subject{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    
+  }
+  .second-semester-subject{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    
+    
+  }
+  .first-semister-description{
+    gap:5em
+  }
+  .first-semister p{
+    font-size: 2em;
+    height: 1.9em;
+    width: 8em;
+    padding: 9px;
+    
+  }
+.daoa-course-tab {
+  margin-left: 2.0em;
+  margin-right: 2.0em;
+}
+}
+@media(max-width:800){
+
+.daoa-course-tab {
+  margin-left: 1.0em;
+  margin-right: 1.0em;
+}
+}
+@media (max-width: 750px) {
+  .third-semister-heading{
+    font-size: .8em;
+  }
+  .second-semister-heading{
+    font-size: 0.9em;
+  }
+  .first-semister-description{
+    gap:5em
+  }
+  
+  .first-semister p{
+    font-size: 1.2em;
+    height: 1.9em;
+    width: 8em;
+    padding: 9px;
+    
+  }
+.daoa-course-tab {
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+}
+
+}
+@media (max-width: 700px) {
+  .third-semister-subject1-description-first-part,
+  .third-semister-subject2-description-first-part,
+  .third-semister-subject3-description-first-part,
+  .third-semister-subject4-description-first-part,
+  .third-semister-subject5-description-first-part{
+   width: 30em;
+}
+  .third-semister-subject1-short,
+  .third-semister-subject2-short,
+  .third-semister-subject3-short,
+  .third-semister-subject4-short,
+  .third-semister-subject5-short {
+      width: 32em;
+   /* Initial position */
+    }
+  .third-semester-subject{
+    grid-template-columns: 1fr  ;
+    
+  }
+  .second-semester-subject{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .second-semister-subject1-short,
+  .second-semister-subject2-short,
+  .second-semister-subject3-short,
+  .second-semister-subject4-short {
+    
+    height: 15em;
+    width: 32em;
+    border-radius: 10px;
+    
+  }
+  .second-semister-subject1-description-second-part,
+  .second-semister-subject2-description-second-part,
+  .second-semister-subject3-description-second-part,
+  .second-semister-subject4-description-second-part,
+  .second-semister-subject1-description-first-part,
+  .second-semister-subject2-description-first-part,
+  .second-semister-subject3-description-first-part,
+  .second-semister-subject4-description-first-part{
+   
+    width: 30em;
+    
+    
+  }
+}
+@media (max-width: 600px){
+  .third-semister-subject1-description-first-part,
+  .third-semister-subject2-description-first-part,
+  .third-semister-subject3-description-first-part,
+  .third-semister-subject4-description-first-part,
+  .third-semister-subject5-description-first-part{
+   width: 23em;
+}
+  .third-semister-subject1-short,
+  .third-semister-subject2-short,
+  .third-semister-subject3-short,
+  .third-semister-subject4-short,
+  .third-semister-subject5-short {
+      width: 25em;
+   /* Initial position */
+    }
+}
+@media (max-width: 550px){
+  .second-semister-subject1-short,
+  .second-semister-subject2-short,
+  .second-semister-subject3-short,
+  .second-semister-subject4-short {
+    
+    height: 15em;
+    width: 25em;
+    border-radius: 10px;
+    
+  }
+  .second-semister-subject1-description-second-part,
+  .second-semister-subject2-description-second-part,
+  .second-semister-subject3-description-second-part,
+  .second-semister-subject4-description-second-part,
+  .second-semister-subject1-description-first-part,
+  .second-semister-subject2-description-first-part,
+  .second-semister-subject3-description-first-part,
+  .second-semister-subject4-description-first-part{
+   
+    width: 23em;
+    
+    
+  }
+}
+@media (max-width: 500px) {
+  .third-semister-heading{
+    font-size: .6em;
+  }
+  .first-semister-description{
+    gap:2em
+  }
+  .second-semister-heading{
+    font-size: .8em;
+  }
+}
+
+@media (max-width: 450px) {
+  .third-semister-subject1-description-first-part,
+  .third-semister-subject2-description-first-part,
+  .third-semister-subject3-description-first-part,
+  .third-semister-subject4-description-first-part,
+  .third-semister-subject5-description-first-part{
+   width: 18em;
+}
+  .third-semister-subject1-short,
+  .third-semister-subject2-short,
+  .third-semister-subject3-short,
+  .third-semister-subject4-short,
+  .third-semister-subject5-short {
+      width: 20em;
+   /* Initial position */
+    }
+  .second-semister-heading{
+    font-size: .6em;
+  }
+  .second-semister-subject1-short,
+  .second-semister-subject2-short,
+  .second-semister-subject3-short,
+  .second-semister-subject4-short {
+    
+    height: 15em;
+    width: 20em;
+    border-radius: 10px;
+    
+  }
+  .second-semister-subject1-description-second-part,
+  .second-semister-subject2-description-second-part,
+  .second-semister-subject3-description-second-part,
+  .second-semister-subject4-description-second-part,
+  .second-semister-subject1-description-first-part,
+  .second-semister-subject2-description-first-part,
+  .second-semister-subject3-description-first-part,
+  .second-semister-subject4-description-first-part{
+   
+    width: 18em;
+    
+    
+  }
+.daoa-course-tab {
+  margin-left: 0em;
+  margin-right: 0em;
+}
+}
+
+@media (max-width: 400px) {
+  .third-semister-heading{
+    font-size: .5em;
+  }
+  .first-semister-description{
+    gap:1em
+  }
+  .second-semister-heading{
+    font-size: .5em;
+  }
+}
+
+@media (max-width: 350px) {
+  .first-semister-description{
+    gap:5em
+  }
+  .first-semister p{
+    font-size: 1em;
+    height: 1.9em;
+    width: 7em;
+    padding: 6px;
+    
+  }
+}

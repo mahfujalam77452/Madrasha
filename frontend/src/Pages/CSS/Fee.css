@@ -1,0 +1,167 @@
+.fee {
+  padding: 20px;
+  border-radius: 8px;
+  background: #f6f6f6;
+  margin-right: 3.5em;
+  margin-left: 3.5em;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.fee-name,
+.fee-roll,
+.fee-section,
+.fee-forwhich,
+.fee-department,
+.fee-session {
+  margin-bottom: 15px;
+}
+
+.fee-name p,
+.fee-roll p,
+.fee-section p,
+.fee-forwhich p,
+.fee-department p,
+.fee-session p {
+  margin: 0 0 5px;
+  font-weight: bold;
+}
+
+.fee-name input,
+.fee-roll input,
+.fee-section select,
+.fee-forwhich select,
+.fee-department input,
+.fee-session input {
+  width: 50%;
+  padding: 8px;
+  height: 3em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.add-fee-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10em;
+}
+.fee-container{
+  margin: 0em;
+  padding: 1em;
+  background-color: white;
+  border: 1px solid rgb(213, 212, 212);
+  border-radius: 1em;
+}
+.add-fee-button button[type="submit"] {
+  width: 10%;
+  padding: 10px;
+  background-color: #0b9901;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.add-fee-button button[type="submit"]:hover {
+  background-color: #38b901;
+}
+
+/* Responsive Styles */
+@media (max-width: 1250px) {
+  .fee {
+      margin-left: 3.0em;
+      margin-right: 3.0em;
+  }
+}
+
+@media (max-width: 950px) {
+  .fee {
+      margin-left: 2.0em;
+      margin-right: 2.0em;
+  }
+}
+
+@media (max-width: 800px) {
+  .fee {
+      margin-left: 1.0em;
+      margin-right: 1.0em;
+      padding: 15px;
+  }
+  
+  .fee-name input,
+  .fee-roll input,
+  .fee-section select,
+  .fee-forwhich select,
+  .fee-department input,
+  .fee-session input {
+      width: 80%; /* Increase width for smaller screens */
+  }
+
+  .add-fee-button button[type="submit"] {
+      width: 40%; /* Increase button width */
+  }
+}
+
+@media (max-width: 750px) {
+  .fee {
+      margin-left: 0.5em;
+      margin-right: 0.5em;
+  }
+}
+
+@media (max-width: 500px) {
+  .fee {
+      padding: 10px;
+  }
+
+  .fee-name input,
+  .fee-roll input,
+  .fee-section select,
+  .fee-forwhich select,
+  .fee-department input,
+  .fee-session input {
+      width: 100%; /* Full width for all inputs */
+  }
+
+  .add-fee-button button[type="submit"] {
+      width: 80%; /* Button width for small screens */
+  }
+}
+
+@media (max-width: 450px) {
+  .fee {
+      margin-left: 0em;
+      margin-right: 0em;
+  }
+
+  .add-fee-button {
+      height: auto; /* Allow for dynamic height */
+  }
+}
+
+@media (max-width: 400px) {
+  .fee-name p,
+  .fee-roll p,
+  .fee-section p,
+  .fee-forwhich p,
+  .fee-department p,
+  .fee-session p {
+      font-size: 14px; /* Smaller font for very small screens */
+  }
+
+  .add-fee-button button[type="submit"] {
+      font-size: 14px; /* Smaller button font */
+  }
+}
+
+@media (max-width: 350px) {
+  .fee {
+      padding: 5px; /* Reduce padding for very small screens */
+  }
+}

@@ -1,0 +1,279 @@
+/* General form styling */
+.admission-form {
+  
+  width: 100%;
+  max-width: 800px;
+  margin: 2em auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.admission-form h2, .admission-form h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.admission-form label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.admission-form strong {
+  color: red;
+}
+
+/* Input fields styling */
+.admission-form input[type="text"],
+.admission-form input[type="email"],
+.admission-form input[type="date"],
+.admission-form select,
+.admission-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.admission-form textarea {
+  resize: vertical;
+  height: 100px;
+}
+
+.admission-form input[type="file"] {
+  border: none;
+}
+
+/* Make inputs equal height */
+.admission-form .form-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.admission-form .form-group > div {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.admission-form .form-group > div:last-child {
+  margin-right: 0;
+}
+
+.admission-form input,
+.admission-form select {
+  height: 100%;
+  display: block;
+}
+
+/* Button styling */
+.admission-form button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.admission-form button:hover {
+  background-color: #45a049;
+}
+
+/* Guardian Details */
+.admission-form .guardian-details div {
+  margin-bottom: 15px;
+}
+
+/* Address fields spanning full width */
+.admission-form .present-address,
+.admission-form .permanent-address,
+.admission-form .guardian-address {
+  grid-column: span 2;
+}
+
+/* File upload styling */
+.admission-form .student-photo,
+.admission-form .guardian-photo,
+.admission-form .upload-document {
+  margin-bottom: 15px;
+}
+
+/* Section styling */
+.admission-form section {
+  margin-bottom: 30px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.admission-form .header {
+  background-color: #4CAF50;
+  padding: 10px;
+  border-radius: 4px;
+  color: white;
+}
+
+.admission-form .header h2 {
+  color: white;
+  text-align: center;
+}
+
+
+
+
+
+@media (max-width: 950px) {
+  .admission-form {
+    width: 88%;
+    
+    margin: 2em auto;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 800px) {
+  .admission-form {
+    margin: 2em auto;
+  }
+
+  /* Adjust section headers */
+  .admission-form h2, .admission-form h3 {
+    font-size: 1.5em;
+  }
+
+  /* Stack form elements vertically for better fit */
+  .admission-form .form-group {
+    flex-direction: column;
+  }
+
+  .admission-form .form-group > div {
+    margin-right: 0;
+    width: 100%;
+  }
+}
+
+@media (max-width: 750px) {
+  
+    .admission-form {
+      margin: 2em auto;
+    }
+  
+
+  /* Reduce font sizes */
+  .admission-form label,
+  .admission-form input[type="text"],
+  .admission-form input[type="email"],
+  .admission-form select,
+  .admission-form textarea,
+  .admission-form button {
+    font-size: 0.9em;
+  }
+
+  /* Adjust padding for smaller viewports */
+  .admission-form section {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 500px) {
+  .admission-form {
+    margin: 2em auto;
+    padding: 10px;
+  }
+
+  .admission-form input[type="text"],
+  .admission-form input[type="email"],
+  .admission-form select,
+  .admission-form textarea {
+    padding: 8px;
+    font-size: 0.85em;
+  }
+
+  .admission-form button {
+    padding: 8px 16px;
+    font-size: 0.85em;
+  }
+
+  /* Reduce section margins */
+  .admission-form section {
+    margin-bottom: 20px;
+  }
+
+  /* Stack elements in columns */
+  .admission-form .first-half,
+  .admission-form .second-half,
+  .admission-form .third-half,
+  .admission-form .forth-half {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 450px) {
+  .admission-form {
+    margin: 2em auto;
+  }
+
+  /* Adjust section spacing */
+  .admission-form section {
+    padding: 10px;
+    margin-bottom: 15px;
+  }
+
+  /* Reduce button size */
+  .admission-form button {
+    padding: 8px 14px;
+    font-size: 0.8em;
+  }
+}
+
+@media (max-width: 400px) {
+  /* Adjust input sizes for very small screens */
+  .admission-form input[type="text"],
+  .admission-form input[type="email"],
+  .admission-form select,
+  .admission-form textarea {
+    padding: 7px;
+    font-size: 0.8em;
+  }
+
+  .admission-form button {
+    padding: 7px 12px;
+    font-size: 0.8em;
+  }
+
+  .admission-form h2, .admission-form h3 {
+    font-size: 1.2em;
+  }
+}
+
+@media (max-width: 350px) {
+  /* Minimal adjustments for ultra-small screens */
+  .admission-form input[type="text"],
+  .admission-form input[type="email"],
+  .admission-form select,
+  .admission-form textarea {
+    padding: 6px;
+    font-size: 0.75em;
+  }
+
+  .admission-form button {
+    padding: 6px 10px;
+    font-size: 0.75em;
+  }
+
+  .admission-form h2, .admission-form h3 {
+    font-size: 1.1em;
+  }
+}
+
